@@ -1124,61 +1124,17 @@ footer .getintouch strong{
 
 .about .about-text p{
     color: #5f5e5f;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: lighter;
     letter-spacing: -1px;
-    line-height: 35px;
+    line-height: 33px;
 }
 
-.owl-carousel.work-areas .area i:before{
-    font-size: 100px;
-}
-
-.owl-carousel.work-areas .area .title{
-    font-size: 19px;
-}
-
-.owl-carousel.work-areas .area .line{
-    width: 35px;
-    height: 4px;
-    margin: 10px auto;
-    display: inline-block;
-}
-
-.owl-carousel.work-areas .area p{
-    color: #5f5e5f;
-    line-height: 22px;
-    font-size: 15px;
-    padding: 0 30px;
-}
-
-.owl-theme .owl-controls .owl-page span{
-    width: 10px;
-    height: 10px;
-    margin-top: 30px;
+.about img {
+    max-width: 100%;
 }
 
 
-.about .clients .client {
-    height: 200px;
-    display: table;
-    opacity: .5;
-}
-
-.about .clients .client:hover{
-    transition: all ease 0.3s;
-    opacity: 1;
-}
-
-.about .clients .client figure{
-    vertical-align: middle;
-    display: table-cell;
-    text-align: center;
-}
-
-.about .clients .client figure img{
-    max-width: 50%;
-}
 
 
 /*------------------------ News Page ------------------------*/
