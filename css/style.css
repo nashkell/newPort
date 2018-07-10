@@ -601,7 +601,7 @@ h2, h3, h4, h5, h6 {
     color: #000 !important;
     font-family: 'Montserrat', sans-serif !important;
     border-radius: 50px;
-    background: linear-gradient(to right, #ea0026 50%, white  50%);
+    background: linear-gradient(to right, #ffb100 50%, white  50%);
     background-size: 202% 100%;
     background-position:right bottom;
     margin-left:10px;
