@@ -16,6 +16,59 @@
      2.2 Twitter Section
 
 
+/* download button */
+
+.download {
+	position: absolute;
+	left: 0;
+	width: 200px;
+	height: 60px;
+	background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.075), rgba(255,255,255,.045));
+	background-image: linear-gradient(to top, rgba(0,0,0,.075), rgba(255,255,255,.045));
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.09),inset 0 1px 0 rgba(255,255,255,.04), 0 0 1px rgba(0,0,0,.3), 0 0 10px rgba(0,0,0,.1);
+	border-radius: 100px;
+	color: #ffb100;
+	line-height: 60px;
+	text-align: center;
+	letter-spacing: 5px;
+	overflow: hidden;
+	transition: all .3s cubic-bezier(.67,.13,.1,.81), transform .15s cubic-bezier(.67,.13,.1,.81);
+    z-index: 200;
+}
+.download:hover {
+	right: calc(50% - 200px);
+    width: 250px;
+    color: #ffb100;
+}
+.download:active {
+	transform: translateY(3px);
+}
+.download:before, .download:after {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	transition: all .3s cubic-bezier(.67,.13,.1,.81);
+}
+.download:before {
+	content: 'RESUME';
+}
+.download:after {
+	content: 'DOWNLOAD';
+	top: -60px;
+	opacity: 0;
+}
+.download:hover:after {
+	top: 0px;
+	opacity: 1;
+}
+.download:hover:before {
+	top: 60px;
+	opacity: 0;
+}
+
 
 /*------------------------ 1 Body and Core Css ------------------------*/
 
@@ -34,6 +87,33 @@ header{
     width: 100%;
     position: absolute;
     z-index: 5;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #5f5e5f;
+    font-weight:700;
+}
+.caption, .caption_light {
+    color: #5f5e5f;
+}
+.caption {
+    font-weight:600;
+    font-size: 14px;
+}
+
+.caption_light {
+    font-weight: 300;
+    font-size: 10px;
+}
+
+.portfolio-single.type-2 p.credit {
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 10px;
+}
+
+.portfolio-single.type-2 p a {
+    color: #ffb100;
 }
 
 /* Preloader */
@@ -1561,6 +1641,7 @@ textarea.form-message{
         font-size: 20px;
         color: #b7b7b7;
         font-weight: 500;
+        width: 80%;
     }
 
     .portfolio .portfolio-filter {    
@@ -1691,6 +1772,15 @@ textarea.form-message{
         padding-left: 0 !important;
     }
 
+}
+
+@media (max-width: 576px) {
+    .col-xs-3 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
 }
 
 
